@@ -1,0 +1,17 @@
+<app-header tabId="0"></app-header>
+
+  <ag-grid-angular
+    #agGrid
+    style="width: 1100px; height: 550px;"
+    id="myGrid"
+    class="ag-theme-alpine"
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    [autoGroupColumnDef]="autoGroupColumnDef"
+    [groupIncludeFooter]="true"
+    [groupIncludeTotalFooter]="true"
+    [enableRangeSelection]="true"
+    [animateRows]="true"
+    [rowData]="rowData"
+    (gridReady)="onGridReady($event)"
+  ></ag-grid-angular>
