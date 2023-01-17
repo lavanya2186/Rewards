@@ -1,3 +1,1 @@
 # Rewards
-
-# TEST
